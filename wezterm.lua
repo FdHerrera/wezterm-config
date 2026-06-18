@@ -15,7 +15,8 @@ config.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
 local act = wezterm.action
 
 config.keys = {
-	{ key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
+	{ key = "v", mods = "CTRL", action = act.PasteFrom("Clipboard") },
+	{ key = "t", mods = "ALT", action = act.SpawnTab 'CurrentPaneDomain' },
 }
 for i = 1, 8 do
 	-- ALT + number to activate that tab
